@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+@font-face {
+    font-display: swap;         
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.eot');
+    src: url('../fonts/open-sans-v40-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'), 
+         url('../fonts/open-sans-v40-latin-regular.woff') format('woff'), 
+         url('../fonts/open-sans-v40-latin-regular.ttf') format('truetype'), 
+         url('../fonts/open-sans-v40-latin-regular.svg#OpenSans') format('svg'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v40-latin-500.eot'); 
+    src: url('../fonts/open-sans-v40-latin-500.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/open-sans-v40-latin-500.woff2') format('woff2'), 
+         url('../fonts/open-sans-v40-latin-500.woff') format('woff'),
+         url('../fonts/open-sans-v40-latin-500.ttf') format('truetype'), 
+         url('../fonts/open-sans-v40-latin-500.svg#OpenSans') format('svg');
+}
+@font-face {
+    font-display: swap;     
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v40-latin-600.eot');   
+    src: url('../fonts/open-sans-v40-latin-600.eot?#iefix') format('embedded-opentype'),    
+         url('../fonts/open-sans-v40-latin-600.woff2') format('woff2'),     
+         url('../fonts/open-sans-v40-latin-600.woff') format('woff'),   
+         url('../fonts/open-sans-v40-latin-600.ttf') format('truetype'),    
+         url('../fonts/open-sans-v40-latin-600.svg#OpenSans') format('svg');    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --thamecolor: #007BFF;
+    --thamedark: #0D6EFD;
+    --lightcolor: #97A4AF;
+    --textcolor: #FFFFFF;
+}
+.frm_main{
+    width: 350px;
+    background-color: #FEFFFF;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+}
+.frm_input{
+    margin-top: 150px;
+}
+.frm_input input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: #F0F0F0 1px solid;
+    padding: 0px 20px 10px 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.frm_input .frm_pass input{
+    margin-bottom: 20px;
+}
+input:focus{
+    border: none;
+    outline: none;
+    border-bottom: #007BFF 1px solid;
+}
+input::placeholder{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--lightcolor);
+}
+.frm_name,
+.frm_pass,
+.frm_email{
+    position: relative;
+}
+.frm_name i,
+.frm_pass i,
+.frm_email i{
+    position: absolute;
+    font-size: 16px;
+    top: -2px;
+    left: 0%;
+    color: var(--thamecolor);
+}
+.frm_chk{
+    margin: 20px 0px;
+}
+.chk{
+    display: flex;
+    align-items: center;
+}
+.chk input{
+    height: 15px;
+    width: 15px;
+    accent-color: var(--thamecolor);
+    margin-right: 10PX;
+}
+.chk label{
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--lightcolor);
+    font-weight: 400;
+    a{
+        font-weight: 600;
+        color: var(--thamecolor);
+    }
+}
+.frm_btn{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.frm_btn a:nth-child(2){
+    font-weight: 500;
+    transition: 0.3s;
+    color: var(--thamecolor);
+    &:hover{
+        color: var(--thamedark);
+    }
+}
+.frm_btn button{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--thamecolor);
+    box-shadow: 1px 1px 10px rgba(0, 123, 255, 0.5);
+    transition: 0.5s;
+    &:hover{
+        transform: translateY(-5px);
+        background-color: var(--thamedark);
+        box-shadow: 1px 1px 10px rgba(0, 123, 255, 0.9);
+    }
+}
+.frm_btn button a {
+    color: #4292DC;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 30px;
+    display: block;
+    color: var(--textcolor);
+}
+.sec_first{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--lightcolor);
+    a{
+        color: var(--thamecolor);
+        font-weight: 600;
+        transition: 0.2s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.frm_social{
+    position: absolute;
+    height: 150px;
+    width: 90%;
+    padding: 30px;
+    background-color: var(--thamedark);
+    border-radius: 10px;
+    top: -5%;
+    left: 5%;
+}
+.frm_social{
+    text-align: center;
+}
+.frm_social .title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--textcolor);
+    margin-bottom: 30px;
+}
+.frm_icon a i {
+    color: var(--textcolor);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 10px 20px;
+    &:hover{
+        transform: translateY(-5px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
